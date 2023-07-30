@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh; /*altura maxima*/
+    width: 100vw; /*largura maxima*/
+    background-color: aqua;
+}
+
+body{
+    background: url(imagens/natureza.jpg) no-repeat top center; /*alinha mento e fixação da imagem de fundo*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative; /*vai nos ajudar a posicionar a imagem que vai no centro */
+    height: 100vh;
+}
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Todo comando acima é para centralizar a imagem */
+    /*no gimp deu a extenção de px da imagem */
+    height: 627px;
+    width: 311px;
+    background: url(imagens/frame-iphone.png)no-repeat;
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+section#redes-sociais {
+    text-align: right;
+
+}
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*deixa os logos redondos */
+    box-shadow: 2px 2px 2px 2px black;
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid wheat;
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 2px 5px black;
+    transition: trabsform 0.3s, border 1s;
+}
